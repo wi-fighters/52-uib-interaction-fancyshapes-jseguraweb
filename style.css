@@ -41,8 +41,22 @@ section {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
+.task-two:hover {
+    transform: rotate(360deg);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transition: 2s;
+}
+
 .task-three {
     width: 20rem;
     height: 20rem;
     transform: rotate(180deg);
+}
+
+.task-three:hover {
+    transform: rotate(360deg);
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: 2s;
 }
